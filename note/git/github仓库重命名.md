@@ -41,11 +41,9 @@ git branch --set-upstream-to=origin/master
 
 ## 网上其他方法记录
 
-<div style="color:#AB0C39;font-weight: 700;">
-    这个方法有点坑，容易出错！ <br> 
-    这个方法有点坑，容易出错！ <br>
-    这个方法有点坑，容易出错！ <br>
-</div>
+这个方法有点坑，容易出错！ <br> 
+这个方法有点坑，容易出错！ <br>
+这个方法有点坑，容易出错！ <br>
 
 方法如下：
 

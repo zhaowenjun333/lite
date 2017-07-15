@@ -5,7 +5,6 @@
 
 ## 目录结构
 
-- [note](note) 笔记
-- [knowledge](knowledge) 知识体系
-- [Standard](Standard) 前端语言规范
-- [Code-Snippet](Code-Snippet) 代码片段
+- [note](note/) 笔记
+- [demo](demo/) 示例
+- [Standard](Standard/) 前端语言规范
