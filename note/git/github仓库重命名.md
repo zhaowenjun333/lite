@@ -8,13 +8,13 @@
 
 因为远程的仓库名改了, 本地的对应仓库名也要改. 
 
-1. git remote -v <br>
+1. `git remote -v <br>`
    列出所有远程仓库信息, 包括网址.
 
-2. git remote set-url origin git@github.com:username/newrepo.git <br>
+2. `git remote set-url origin git@github.com:username/newrepo.git` <br>
    修改远程仓库对应的网址.
 
-3. git pull <br>
+3. `git pull` <br>
    拉取完整的远程仓库，在这一部的时候可能会有以下提示：
 ```shell
 * [new branch]      master     -> origin/master
@@ -47,10 +47,10 @@ git branch --set-upstream-to=origin/master
 
 方法如下：
 
-- git remote rm origin <br>
+- `git remote rm origin` <br>
 删掉本地的远程仓库信息
 
-- git remote add origin git@github.com:username/newrepo.git <br>
+- `git remote add origin git@github.com:username/newrepo.git` <br>
 添加新的远程仓库
 
-- git branch –set-upstream-to=origin/master master
+- `git branch –set-upstream-to=origin/master master`
