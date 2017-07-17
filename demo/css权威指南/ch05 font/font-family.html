@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        /**
+         * 字体栈
+         * 浏览器会根据 font-family 的属性赋予字体格式
+         * 如果该字体不能匹配内容中的文字，则会继续使用下一个字体
+         *
+         * PS：使用这种方法可以在同一段文字中，中英文使用不同字体
+         * 如下，h1中英文使用的 Times ，中文使用的 微软雅黑
+         */
+          h1{font-family: Times, Chicago, '微软雅黑', sans-serif;}
+          h2{font-family: Chicago, sans-serif;}
+          .times{font-family: Times, sans-serif;}
+          .yahei{font-family: '微软雅黑', sans-serif;}
+        </style>
+    </head>
+    <body>
+    <h1>My World!我的世界，</h1>
+    <h2>My World!我的世界</h2>
+
+    <p>
+      ,./;''\  <br>
+      ，。、；‘’、
+    </p>
+    <p class="times">
+      ,./;''\  <br>
+      ，。、；‘’、
+    </p>
+    <p class="yahei">
+      ,./;''\  <br>
+      ，。、；‘’、
+    </p>
+    </body>
+</html>
