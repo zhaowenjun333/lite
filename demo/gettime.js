@@ -2,7 +2,7 @@
 * @Author: hua03
 * @Date:   2017-07-20 15:42:30
 * @Last Modified by:   hua03
-* @Last Modified time: 2017-07-20 16:08:30
+* @Last Modified time: 2017-07-21 10:17:57
 */
 
 'use strict';
@@ -37,3 +37,5 @@ console.log("后天："+GetDateStr(2));
 console.log("一月后："+GetDateStr(30));  
 console.log("三月后："+GetDateStr(90));  
 console.log("半年后："+GetDateStr(180)); 
+
+console.error("123");
