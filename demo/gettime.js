@@ -2,7 +2,7 @@
 * @Author: hua03
 * @Date:   2017-07-20 15:42:30
 * @Last Modified by:   hua03
-* @Last Modified time: 2017-07-21 10:17:57
+* @Last Modified time: 2017-07-25 12:11:24
 */
 
 'use strict';
@@ -25,7 +25,7 @@ function GetDateStr(AddDayCount) {
   var d = dd.getDate()<10?"0"+dd.getDate():dd.getDate();//获取当前几号，不足10补0  
   return y+"-"+m+"-"+d;   
 }  
-
+console.log(123);
 
 console.log("半年前："+GetDateStr(-180));  
 console.log("三月前："+GetDateStr(-90));  
@@ -39,3 +39,5 @@ console.log("三月后："+GetDateStr(90));
 console.log("半年后："+GetDateStr(180)); 
 
 console.error("123");
+
+console.warn("11111");

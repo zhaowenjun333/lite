@@ -5,7 +5,7 @@
 
 ## 目录结构
 
-- [note](note/) 笔记
+- [note](Note/) 笔记
 - [demo](demo/) 示例
 - [Standard](Standard/) 前端语言规范
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    .normal {white-space: normal;}
+    .nowrap {white-space: nowrap;}
+    .pre {white-space: pre;}
+    .pre-wrap {white-space: pre-wrap;}
+    .pre-line {white-space: pre-line;}
+  </style>
+</head>
+
+<body>
+  <p class="normal">
+    When-errors     occur      in CSS
+    the parser       attempts to     recover       gracefully, throwing away
+    only the minimum amount of content before returning to parsing as normal. 
+  </p>
+  <p class="nowrap">
+    When-errors     occur      in CSS,
+    the parser       attempts to     recover       gracefully, throwing away
+    only the minimum amount of content before returning to parsing as normal.   </p>
+
+  <p class="pre">
+    When-errors     occur      in CSS,                        the parser       attempts to     recover       gracefully, throwing away 
+    only the minimum amount of content before returning to parsing as normal.   </p>
+  <p class="pre-wrap">
+    When-errors     occur      in CSS,                         the parser       attempts to     recover       gracefully, throwing away 
+    only the minimum amount of content before returning to parsing as normal.   </p>
+  <p class="pre-line">
+    When-errors     occur      in CSS,
+    the parser       attempts to     recover       gracefully, throwing away
+    only the minimum amount of content before returning to parsing as normal.   </p>
+</body>
+
+</html>
