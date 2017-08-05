@@ -1,10 +1,3 @@
-/*
-* @Author: hua03
-* @Date:   2017-07-20 15:42:30
-* @Last Modified by:   hua03
-* @Last Modified time: 2017-07-25 14:23:23
-*/
-
 'use strict';
 /**
  * [GetDateStr 获取目标日期，比如今天，明天，后天未来几天，或者之前几天]
@@ -43,4 +36,7 @@ console.log("半年后："+GetDateStr(180));
 
 console.error("123");
 
+console.warn("11111");
+console.warn("11111");
+console.warn("11111");
 console.warn("11111");

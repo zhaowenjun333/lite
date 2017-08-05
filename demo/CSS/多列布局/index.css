@@ -1,0 +1,14 @@
+.test {
+  /*列宽及列数*/
+  columns: 200px 3;
+  /* 列间隔 */
+  column-gap: 50px;
+  /* 列间边框 */
+  column-rule:10px double green;
+  column-fill: balance;
+}
+.test div {background-color: #ddd;}
+.span {
+  margin: 10px;
+  column-span: all;
+}
