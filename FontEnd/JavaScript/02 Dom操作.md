@@ -10,7 +10,10 @@
         - [修改DOM的样式](#修改dom的样式)
     - [创建/删除/替换节点](#创建删除替换节点)
         - [创建节点](#创建节点)
+        - [插入节点](#插入节点)
+        - [替换节点](#替换节点)
         - [删除节点](#删除节点)
+    - [DOM 属性](#dom-属性)
     - [修改输出流](#修改输出流)
 
 <!-- /TOC -->
@@ -44,8 +47,6 @@
     ```
 
 > *通过标签或者类名查找，返回的是伪数组； 在改变dom的 **内容** **属性** **样式** 的时候，不能使用伪数组*
-
-
 
 ## DOM 修改
 
@@ -93,13 +94,17 @@ a[0].style.color = "red";
 | createTextNode()         | 创建文本节点。                                                  
 | createAttribute()        | 创建属性节点。                                                  
 | appendChild()            | 把新的子节点添加到指定节点。                                    
-| insertBefore()           | 在指定的子节点前面插入新的子节点。                              
+| insertBefore()           | 在指定的子节点前面插入新的子节点。                             
 | removeChild()            | 删除子节点。                                                    
 | replaceChild()           | 替换子节点。
 | getAttribute()           | 返回指定的属性值。                                              
 | setAttribute()           | 把指定属性设置或修改为指定的值。       
 
 ### 创建节点
+
+```js
+node.appendChild(newNode);
+```
 
 **步骤：**
 
@@ -117,7 +122,61 @@ p3.innerHTML = "我是段落三"
 d1.appendChild(p3)
 ```
 
+### 插入节点
+
+```javascript
+parentNode.insertBefore(newNode, referenceNode);
+```
+
+**步骤：**
+
+1. 获取父元素
+2. 获取相邻子元素
+3. 创建元素
+4. 将创建的元素插入相邻子元素的前面 
+
+```javascript
+// 获取父元素
+var d1 = document.getElementById('d1')
+// 获取子元素
+var p2 = document.getElementById('p2')
+// 创建元素
+var p = document.createElement('p')
+p.innerHTML = "我是段落三"
+// 将创建的元素插入父元素中
+d1.insertBefore(p, p2)
+```
+
+### 替换节点
+
+```js
+parentNode.replaceChild(newChild, oldChild);
+```
+
+**步骤：**
+
+1. 获取父元素
+2. 获取旧子元素
+3. 创建元素
+4. 将新建元素和旧子元素进行替换 
+
+```javascript
+// 获取父元素
+var d1 = document.getElementById('d1')
+// 获取子元素
+var p2 = document.getElementById('p2')
+// 创建元素
+var p = document.createElement('p')
+p.innerHTML = "我是段落三"
+// 将创建的元素插入父元素中
+d1.replaceChild(p, p2)
+```
+
 ### 删除节点
+
+```js
+node.removeChild(child);
+```
 
 **步骤：**
 
@@ -133,6 +192,21 @@ var p1 = document.getElementById('p1')
 // 删除子元素
 d1.removeChild(p1)
 ```
+
+## DOM 属性
+
+|      属性       |             描述                               
+| --------------- | ---------------------------
+| [innerHTML]()   | 获取或替换DOM元素的内容                                               
+| [nodeName]()    | 获取节点的名称。                                                  
+| [nodeValue](https://developer.mozilla.org/zh-CN/docs/Web/API/Node/nodeValue)| 获取节点的值。                                                  
+| [nodeType](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType)| 获取节点的类型。 
+| parentNode | 返回父元素节点
+| firstChild | 返回第一个子元素
+| lastChild  | 返回最后一个子元素                                 
+| childNodes   | 返回元素的所有节点                                 
+| document.documentElement  | 全部文档                              
+| document.body  | 文档的主体                                 
 
 ## 修改输出流
 
