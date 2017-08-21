@@ -1,5 +1,19 @@
 # DOM操作
 
+<!-- TOC -->
+
+- [DOM操作](#dom操作)
+    - [获取DOM元素](#获取dom元素)
+    - [修改HTML输出流](#修改html输出流)
+    - [修改DOM的内容](#修改dom的内容)
+    - [修改DOM的属性](#修改dom的属性)
+    - [修改DOM的样式](#修改dom的样式)
+    - [创建/删除节点](#创建删除节点)
+        - [创建节点](#创建节点)
+        - [删除节点](#删除节点)
+
+<!-- /TOC -->
+
 ## 获取DOM元素
 
 - 通过 **id** 找到DOM元素
@@ -34,6 +48,11 @@ document.write(Date());
 
 ## 修改DOM的内容
 
+1. 获取元素（通过标签或者类名获取到的是伪数组，无法直接改变其内容）
+2. 修改元素的内容
+
+> 如果note中有子元素，子元素会被覆盖
+
 ```javascript
 var note = document.getElementsByClassName("note");
 note.innerHTML = "我的世界";
@@ -43,12 +62,25 @@ note.innerHTML = "我的世界";
 
 ## 修改DOM的属性
 
+1. 获取元素（通过标签或者类名获取到的是伪数组，无法直接改变其属性）
+2. 修改元素的属性
+
 ```javascript
 var a = document.getElementsByTagName("a");
 a[0].href = "http://www.baodu.com";
 ```
 
-> 采用的驼峰法则，将CSS样式根据驼峰法则来书写就变成了JS样式
+## 修改DOM的样式
+
+1. 获取元素（通过标签或者类名获取到的是伪数组，无法直接改变其样式）
+2. 修改元素的样式
+
+```javascript
+var a = document.getElementsByTagName("a");
+a[0].style.color = "red";
+```
+
+> JS属性名采用的驼峰法则，将CSS样式根据驼峰法则来书写就变成了JS样式
 
 ## 创建/删除节点
 
@@ -56,9 +88,9 @@ a[0].href = "http://www.baodu.com";
 
 **步骤：**
 
-> 1. 获取父元素
-> 2. 创建元素
-> 3. 将创建的元素插入父元素中 
+1. 获取父元素
+2. 创建元素
+3. 将创建的元素插入父元素中 
 
 ```javascript
 // 获取父元素
@@ -74,9 +106,9 @@ d1.appendChild(p3)
 
 **步骤：**
 
-> 1. 获取父元素
-> 2. 获取要删除的子元素
-> 3. 删除子元素
+1. 获取父元素
+2. 获取要删除的子元素
+3. 删除子元素
 
 ```javascript
 // 获取父元素
