@@ -106,4 +106,4 @@ expect({a: 1}).to.include({b: 2}).but.not.own.include({b: 2});
 
 `.own` 不能结合 `.nested` 使用
 
-### 
+### .ordered
