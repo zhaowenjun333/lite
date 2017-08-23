@@ -21,5 +21,7 @@
 - 《JavaScript权威指南》
 - 《ES6标准入门》
 
+## TODO
 
+- 翻译Chai断言库的API
 

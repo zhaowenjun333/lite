@@ -3,12 +3,13 @@
 <!-- TOC depthFrom:2 -->
 
 - [expect/should 风格](#expectshould-风格)
-    - [语言链修饰符](#语言链修饰符)
-    - [.not](#not)
-    - [.deep](#deep)
-    - [.nested](#nested)
-    - [.own](#own)
-    - [](#)
+  - [语言链修饰符](#语言链修饰符)
+  - [.not](#not)
+  - [.deep](#deep)
+  - [.nested](#nested)
+  - [.own](#own)
+  - [.ordered](#ordered)
+  - [.members(set[, msg])](#membersset-msg)
 
 <!-- /TOC -->
 
@@ -72,7 +73,7 @@ expect({a: 1}).to.not.equal({a: 1}); //pass
 
 ### .nested
 
-> nested是 chai v4 中出现的断言，如果测试报错
+> `nested`是 `chai v4` 中出现的断言，如果测试报错，请看一下你的`package.json`中`chai`的版本
 
 在其后所有的`.property`和`.include`的**断言**中，允许使用 *点* 和 *括号*。
 
@@ -107,3 +108,10 @@ expect({a: 1}).to.include({b: 2}).but.not.own.include({b: 2});
 `.own` 不能结合 `.nested` 使用
 
 ### .ordered
+
+
+### .members(set[, msg])
+
+- set:Array
+- msg:String 可选 自定义输出的错误信息
+
