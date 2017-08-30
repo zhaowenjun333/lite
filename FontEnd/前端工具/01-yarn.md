@@ -2,6 +2,6 @@
 
 ### 初始化项目
 
-```shell
+```bash
 yarn init -y
 ```

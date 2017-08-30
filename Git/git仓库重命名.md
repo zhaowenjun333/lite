@@ -10,7 +10,7 @@
 
 ##### 1.检查当前远程仓库的信息 
 
-```shell
+```bash
 $ git remote -v 
 ```
 
@@ -20,19 +20,19 @@ $ git remote -v
 
   修改完后使用 `git remote -v` 检查一下本地是否修改成功
 
-```shell
+```bash
 $ git remote set-url origin git@github.com:username/newrepo.git
 ```
 
 ##### 3.拉取最新的仓库
 
-```shell
+```bash
 $ git pull
 ``` 
 
 拉取完整的远程仓库，这一步是为了避免提交代码的时候出错，执行这一步的时候可能会有以下提示：
 
-```shell
+```bash
 * [new branch]      master     -> origin/master
 There is no tracking information for the current branch.
 Please specify which branch you want to merge with.
@@ -48,7 +48,7 @@ If you wish to set tracking information for this branch you can do so with:
 
 如果遇到这个提示可以直接使用下面这个命令：
 
-```shell
+```bash
 git branch --set-upstream-to=origin/master
 ```
 
