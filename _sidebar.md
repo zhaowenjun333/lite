@@ -1,5 +1,5 @@
 - <b>前端</b>
-  - [前端编码规范](fontend/前端编码规范.md)
+  - [前端编码规范](./fontend/前端编码规范.md)
 - <b>Git</b>
   - [Git常用命令](./git/git常用命令.md)
-  - [Git仓库重命名](git/git仓库重命名.md)
+  - [Git仓库重命名](./git/git仓库重命名.md)
