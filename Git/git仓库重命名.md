@@ -55,3 +55,5 @@ git branch --set-upstream-to=origin/master
 现在你可以再次愉快的使用git了 O(∩_∩)O~~
 
 ### END!
+![readme.md](//opd59bmxu.bkt.clouddn.com/readme.md)
+![readme.md](//opd59bmxu.bkt.clouddn.com/readme.md)
