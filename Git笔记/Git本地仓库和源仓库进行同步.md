@@ -42,10 +42,10 @@ git merge upstream/master
 
 在Github上，你可以直接拉取fork源的修改
 
-![2017-10-01-13-45-43](//opd59bmxu.bkt.clouddn.com/2017-10-01-13-45-43.png)
+![2017-10-01-13-45-43](http://opd59bmxu.bkt.clouddn.com/2017-10-01-13-45-43.png)
 
-![2017-10-01-13-46-50](//opd59bmxu.bkt.clouddn.com/2017-10-01-13-46-50.png)
+![2017-10-01-13-46-50](http://opd59bmxu.bkt.clouddn.com/2017-10-01-13-46-50.png)
 
-![2017-10-01-13-47-16](//opd59bmxu.bkt.clouddn.com/2017-10-01-13-47-16.png)
+![2017-10-01-13-47-16](http://opd59bmxu.bkt.clouddn.com/2017-10-01-13-47-16.png)
 
 完成这几步之后就可以将你Github上的仓库同步为最新的了，中间可能会出现合并冲突，暂时没遇到，以后有机会再写下来。
