@@ -6,17 +6,17 @@
 
 ## 2.修改本地仓库信息
 
-因为远程的仓库名改了, 本地的对应仓库名也要改. 
+因为远程的仓库名改了, 本地的对应仓库名也要改.
 
-##### 1.检查当前远程仓库的信息 
+##### 1.检查当前远程仓库的信息
 
 ```bash
-$ git remote -v 
+$ git remote -v
 ```
 
   列出所有远程仓库信息, 包括网址.
 
-##### 2.修改本地对应的远程仓库的地址 
+##### 2.修改本地对应的远程仓库的地址
 
   修改完后使用 `git remote -v` 检查一下本地是否修改成功
 
@@ -28,7 +28,7 @@ $ git remote set-url origin git@github.com:username/newrepo.git
 
 ```bash
 $ git pull
-``` 
+```
 
 拉取完整的远程仓库，这一步是为了避免提交代码的时候出错，执行这一步的时候可能会有以下提示：
 
@@ -55,5 +55,3 @@ git branch --set-upstream-to=origin/master
 现在你可以再次愉快的使用git了 O(∩_∩)O~~
 
 ### END!
-![readme.md](//opd59bmxu.bkt.clouddn.com/readme.md)
-![readme.md](//opd59bmxu.bkt.clouddn.com/readme.md)
