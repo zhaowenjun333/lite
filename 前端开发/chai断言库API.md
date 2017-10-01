@@ -1,4 +1,6 @@
-# [`Chai`断言库API](http://chaijs.com/api/bdd/)
+# `Chai`断言库API
+
+> [Chai API](http://chaijs.com/api/bdd/)
 
 <!-- TOC depthFrom:2 -->
 
@@ -33,7 +35,7 @@
 - but
 - does
 
-语言链修饰符是为了提高语言链的可读性而存在，**不具有任何功能**，除非它被改写。
+语言链修饰符只是为了提高语言链的可读性而存在，**不具有任何功能**，除非它的功能被改写。
 
 例如：可以采用任意组合修饰符的方式来编写测试用例(所有的测试用例可以放在 `mocha` 中 `it` 的函数中运行)
 
@@ -43,7 +45,6 @@ expect('test').to.be.a('string');
 expect('test').is.to.be.a('string');
 ```
 
-**再次强调**：修饰符可以任意的增加组合编写，它只是为了增加可读性而存在，并没有其他实质性的作用
 
 > ***Chai更新了很多次， 如果[官方文档](http://chaijs.com/api/bdd/)上的测试用例无法正常运行，请检查你的Chai版本是否过低***
 
@@ -97,9 +98,9 @@ expect({'.a': {'[b]': 'x'}}).to.nested.include({'\\.a.\\[b\\]': 'x'}); //pass
 
 ```js
 Object.prototype.b = 2;
-        
+
 expect({a: 1}).to.have.own.property('a');
-expect({a: 1}).to.own.property('a').but.not.property('b'); 
+expect({a: 1}).to.own.property('a').but.not.property('b');
 
 expect({a: 1}).to.own.include({a: 1});
 expect({a: 1}).to.include({b: 2}).but.not.own.include({b: 2});
