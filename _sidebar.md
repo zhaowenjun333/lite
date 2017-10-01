@@ -2,4 +2,4 @@
   - [前端编码规范](./fontend/font-end-style.md)
 - <b>Git</b>
   - [Git常用命令](./git/git常用命令.md)
-  - [Git仓库重命名](./git/git仓库重命名.md)
+  - [Git仓库重命名](./git/Github-rp-rename.md)
